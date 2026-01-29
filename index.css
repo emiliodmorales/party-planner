@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+section {
+  padding: 0 1rem;
+}
+
+.lineup {
+  list-style: none;
+  display: grid;
+  gap: 1ch;
+}
+
+.lineup a {
+  color: unset;
+  text-decoration: unset;
+
+  display: block;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  padding: 1ch;
+}
+
+.lineup a:hover {
+  background: #eee;
+}
+
+.selected {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.party {
+  display: grid;
+  gap: 1ch;
+}
+
+#location {
+  font-style: italic;
+}
+
+@media (width > 600px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
